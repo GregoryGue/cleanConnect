@@ -3,6 +3,7 @@ export class Customer {
     firstName: string;
     lastName: string;
     adress: object;
+   
     phoneNumber: string;
     email: string;
 
@@ -13,5 +14,6 @@ export class Customer {
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
+
 
 }
