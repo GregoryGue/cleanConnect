@@ -4,6 +4,8 @@ import { Customer } from '../models/customer.model';
 @Injectable()
 export class CustomerService {
     customerSelected = new EventEmitter<Customer>();
+    customerChanged = new EventEmitter<Customer[]>();
+
     private customers: Customer [] = [
         new Customer
         (
@@ -31,8 +33,13 @@ export class CustomerService {
     ];
     // Arrays and objects are reference types in Javascript, so therefore use the slice() method to
     // return a COPY of the customers array
+
     getCustomers() {
         return this.customers.slice();
     }
 
+    addCustomer(customer: Customer) {
+        this.customers.push(customer);
+        this.customerChanged.emit(this.customers.slice());
+    }
 }

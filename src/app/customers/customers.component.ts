@@ -10,17 +10,22 @@ import { CustomerService } from '../shared/services/customer.service';
 })
 export class CustomersComponent implements OnInit {
   selectedCustomer: Customer;
-  // customers: Customer[];
+  customers: Customer[];
   constructor(private customerService: CustomerService) { }
 
   ngOnInit() {
+    this.customers = this.customerService.getCustomers();
+    this.customerService.customerChanged
+      .subscribe(
+        (customers: Customer[]) => {
+          this.customers = customers;
+        }
+      );
     this.customerService.customerSelected
       .subscribe(
         (customer: Customer) => {
           this.selectedCustomer = customer;
         }
-      )
-    console.log(this.selectedCustomer);
+      );
   }
-
 }
