@@ -1,0 +1,45 @@
+<form>
+  <div>
+      <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox1" value="option1"> Residential
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox2" value="option2"> Commercial
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox3" value="option3"> Both
+        </label>
+  </div>
+  <hr>
+  <div class="form-group">
+        <label>First Name</label>
+        <input type="email" class="form-control" (input)="registerUser($event)" placeholder="First Name">
+  </div>
+  <div class="form-group">
+    <label>Last Name</label>
+    <input type="text" class="form-control" placeholder="Last Name">
+  </div>
+  <div class="form-group">
+    <label>Civic Number</label>
+    <input type="text" class="form-control" placeholder="Civic Number">
+  </div>
+  <div class="form-group">
+      <label>Street</label>
+      <input type="text" class="form-control" placeholder="Street">
+  </div>
+  <div class="form-group">
+      <label>City</label>
+      <input type="text" class="form-control" placeholder="City">
+  </div>
+  <div class="form-group">
+      <label>Postal Code</label>
+      <input type="text" class="form-control" placeholder="Postal Code">
+  </div>
+  <div class="form-group">
+    <label>File input</label>
+    <input type="file">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  
+  <button type="submit" class="btn btn-success" (click)="registerUser()">Register</button>
+</form>

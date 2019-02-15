@@ -12,7 +12,7 @@ export class CustomerService {
                 civicNumber: '500',
                 street: 'Montarville',
                 city: 'Longueuil',
-                postalCode: 'j4k4c7'
+                postalCode: 'j4k2m2'
             },
         '450-111-1111', 'g@ggue.com'
         ),
@@ -22,7 +22,7 @@ export class CustomerService {
             'Greg2', 'Gue2',
             {
                 civicNumber : '510',
-                street: 'Montarville',
+                street: 'Cartier',
                 city: 'Longueuil',
                 postalCode: 'j4k4c7'
             },

@@ -2,12 +2,21 @@ export class Customer {
 
     firstName: string;
     lastName: string;
-    adress: object;
-   
+    // adress: object;
+    adress: {
+        civicNumber: string,
+        street: string,
+        city: string,
+        postalCode: string
+    }
     phoneNumber: string;
     email: string;
 
-    constructor(firstName: string, lastName: string, adress: object, phoneNumber: string, email: string ) {
+    constructor(firstName: string, lastName: string, adress: 
+        {
+          civicNumber: string, street: string, city: string, postalCode: string 
+        }, phoneNumber: string, email: string ) 
+        {
         this.firstName = firstName;
         this.lastName = lastName;
         this.adress = adress;

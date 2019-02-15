@@ -13,12 +13,14 @@ import { CustomerDetailComponent } from './customers/customer-detail/customer-de
 import { CustomerListComponent } from './customers/customer-list/customer-list.component';
 import { SingleCustomerComponent } from './customers/customer-list/single-customer/single-customer.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { RegistrationComponent } from './registration/registration.component';
 
-const appRoutes: Routes =[
+const appRoutes: Routes = [
   { path: '', component: WelcomeComponent },
   { path: 'customers', component: CustomersComponent },
-  { path: 'cleaners', component: CleanersComponent }
-]
+  { path: 'cleaners', component: CleanersComponent },
+  { path: 'registration', component: RegistrationComponent}
+];
 
 @NgModule({
   declarations: [
@@ -31,7 +33,7 @@ const appRoutes: Routes =[
     CustomerListComponent,
     SingleCustomerComponent,
     WelcomeComponent,
-    
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
