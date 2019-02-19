@@ -2,8 +2,8 @@ export class Customer {
 
     firstName: string;
     lastName: string;
-    // adress: object;
-    adress: {
+    // address: object;
+    address: {
         civicNumber: string,
         street: string,
         city: string,
@@ -12,14 +12,14 @@ export class Customer {
     phoneNumber: string;
     email: string;
 
-    constructor(firstName: string, lastName: string, adress: 
+    constructor(firstName: string, lastName: string, address:
         {
           civicNumber: string, street: string, city: string, postalCode: string 
         }, phoneNumber: string, email: string ) 
         {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.adress = adress;
+        this.address = address;
         this.phoneNumber = phoneNumber;
         this.email = email;
     }

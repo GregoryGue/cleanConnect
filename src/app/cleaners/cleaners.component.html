@@ -1,14 +1,22 @@
 <div>
-
-  <h3>Cleaners</h3>
-  <ul>
-    <li *ngFor="let cleaner of cleaners">
-      {{ cleaner.firstName }}
-      {{ cleaner.lastName }}
-      {{ cleaner.companyName }}
-    </li>
-  </ul>
-
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h3>Cleaners</h3> 
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-4">
+      <app-cleaner-list></app-cleaner-list>
+    </div>
+    <div class="col-md-8">
+      <app-cleaner-detail *ngIf="selectedCleaner; else infoText" [cleaner]="selectedCustomer"></app-cleaner-detail>
+      <ng-template #infoText>
+        <p>Click on a cleaner to view his details.</p>
+      </ng-template>
+    </div>
+  </div>
+  
 </div>
 
 

@@ -14,6 +14,8 @@ import { CustomerListComponent } from './customers/customer-list/customer-list.c
 import { SingleCustomerComponent } from './customers/customer-list/single-customer/single-customer.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { CleanerListComponent } from './cleaners/cleaner-list/cleaner-list.component';
+import { SingleCleanerComponent } from './cleaners/cleaner-list/single-cleaner/single-cleaner.component';
 
 const appRoutes: Routes = [
   { path: '', component: WelcomeComponent },
@@ -33,7 +35,9 @@ const appRoutes: Routes = [
     CustomerListComponent,
     SingleCustomerComponent,
     WelcomeComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    CleanerListComponent,
+    SingleCleanerComponent
   ],
   imports: [
     BrowserModule,

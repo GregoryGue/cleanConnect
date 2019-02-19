@@ -8,9 +8,11 @@ import { CustomerService } from '../shared/services/customer.service';
   styleUrls: ['./customers.component.css'],
   providers: [ CustomerService ]
 })
+
 export class CustomersComponent implements OnInit {
   selectedCustomer: Customer;
   customers: Customer[];
+  
   constructor(private customerService: CustomerService) { }
 
   ngOnInit() {

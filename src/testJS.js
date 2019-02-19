@@ -6223,7 +6223,7 @@
                 }(),
                 Ql = function() {
                     return function(t, e, n, r, o) {
-                        this.firstName = t, this.lastName = e, this.adress = n, this.phoneNumber = r, this.email = o
+                        this.firstName = t, this.lastName = e, this.address = n, this.phoneNumber = r, this.email = o
                     }
                 }(),
                 Wl = function() {
@@ -11044,7 +11044,7 @@
             function Rv(t) {
                 return js(0, [(t()(), Sa(0, 0, null, null, 8, "div", [], null, null, null, null, null)), (t()(), Sa(1, 0, null, null, 1, "p", [], null, null, null, null, null)), (t()(), Os(2, null, ["", ""])), (t()(), Sa(3, 0, null, null, 1, "p", [], null, null, null, null, null)), (t()(), Os(4, null, ["", ""])), (t()(), Sa(5, 0, null, null, 1, "p", [], null, null, null, null, null)), (t()(), Os(6, null, ["", ""])), (t()(), Sa(7, 0, null, null, 1, "p", [], null, null, null, null, null)), (t()(), Os(8, null, ["", ""]))], null, function(t, e) {
                     var n = e.component;
-                    t(e, 2, 0, n.customer.adress.civicNumber + " " + n.customer.adress.street), t(e, 4, 0, n.customer.adress.city + " " + n.customer.adress.postalCode), t(e, 6, 0, n.customer.phoneNumber), t(e, 8, 0, n.customer.email)
+                    t(e, 2, 0, n.customer.address.civicNumber + " " + n.customer.address.street), t(e, 4, 0, n.customer.address.city + " " + n.customer.address.postalCode), t(e, 6, 0, n.customer.phoneNumber), t(e, 8, 0, n.customer.email)
                 })
             }
             var Pv = function() {

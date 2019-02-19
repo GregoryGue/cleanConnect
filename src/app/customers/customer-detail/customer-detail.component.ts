@@ -9,6 +9,7 @@ import { CustomerService } from '../../shared/services/customer.service';
   styleUrls: ['./customer-detail.component.css']
 })
 export class CustomerDetailComponent implements OnInit {
+  
   @Input() customer: Customer;
   constructor(private customerService: CustomerService) { }
 
