@@ -19,6 +19,6 @@ export class SingleCleanerComponent implements OnInit {
 
   onSelected() {
     this.cleanerService.cleanerSelected.emit(this.cleaner);
-    console.log(this.cleaner);
+    console.log(this.cleaner.address);
   }
 }

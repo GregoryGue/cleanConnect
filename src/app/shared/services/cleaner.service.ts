@@ -1,5 +1,5 @@
-import { Cleaner } from '../models/cleaners.model';
 import { EventEmitter, Injectable } from '@angular/core';
+import { Cleaner } from '../models/cleaners.model';
 
 @Injectable()
 export class CleanerService {
